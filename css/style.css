@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+}
+#wrapper{
+    position: relative;
+    height: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 830px;
+}
+#canvasWrap {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+#charactorSel {
+    position: absolute;
+    top: 0;
+    left: 726px;
+    display: inline-block;
+    width: 120px;
+}
+#charactorSel .noShow{
+    display: none;
+}
+
+#charactorSel input[type=radio] + img{
+    width: 70%;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+#charactorSel input[type=radio]:checked + img{
+    transform: translateY(0) scale(1.2);
+    animation: walk .5s infinite;
+}
+@keyframes walk {
+    0%, 100% {
+        transform: translateY(0) scale(1.2);
+    }
+    40% {
+        transform: translateY(-5%) scale(1.2);
+    }
+}
+
+#controlPanel {
+    width: 120px;
+    padding-top: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+}
+#controlPanel button {
+    width: 80%;
+    padding: 25px 0;
+    margin: 10px auto;
+}

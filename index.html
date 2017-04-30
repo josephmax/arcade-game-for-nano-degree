@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, minimum-scale=0.8, maximum-scale=0.8, user-scalable=no">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="js/util.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+    <div id="wrapper">
+        <div id="controlPanel">
+        <button onclick="resetGame()">RESTART</button>
+        <button onclick="resetGame('easy')">EASY</button>
+        <button onclick="resetGame('medium')">MEDIUM</button>
+        <button onclick="resetGame('hard')">HARD</button>
+        <button onclick="resetGame('lunatic')">LUNATIC</button>  
+    </div>
+    <div id="canvasWrap">
+    </div>
+    <div id="charactorSel">
+        <form action="" name="charactor">
+            <label><input type="radio" class="noShow" name="char" value="boy"  onchange="player.sprite = 'images/char-' + this.value + '.png'" checked><img src="images/char-boy.png"></label>
+            <label><input type="radio" class="noShow" name="char" value="cat-girl" onchange="player.sprite = 'images/char-' + this.value + '.png'" ><img src="images/char-cat-girl.png"></label>
+            <label><input type="radio" class="noShow" name="char" value="horn-girl" onchange="player.sprite = 'images/char-' + this.value + '.png'" ><img src="images/char-horn-girl.png"></label>
+            <label><input type="radio" class="noShow" name="char" value="pink-girl" onchange="player.sprite = 'images/char-' + this.value + '.png'" ><img src="images/char-pink-girl.png"></label>
+            <label><input type="radio" class="noShow" name="char" value="princess-girl" onchange="player.sprite = 'images/char-' + this.value + '.png'" ><img src="images/char-princess-girl.png"></label>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
