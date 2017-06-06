@@ -1,6 +1,8 @@
 frontend-nanodegree-arcade-game
 ===============================
 
+## Please Download it on your _*PC*_ and open index.html to play
+
 ## 3 kind of gems collection.
 
 blue = 200 score, green = 300 score, orange = 500 score
